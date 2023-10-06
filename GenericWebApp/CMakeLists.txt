@@ -12,12 +12,22 @@ qt_add_executable(appGenericWebApp
     main.cpp
 )
 
+set_source_files_properties(AppConstants.qml PROPERTIES
+    QT_QML_SINGLETON_TYPE TRUE
+)
+
 qt_add_qml_module(appGenericWebApp
     URI GenericWebApp
     VERSION 1.0
     QML_FILES Main.qml
-    QML_FILES MenuBar.qml
     QML_FILES AppConstants.qml
+    QML_FILES components/AppSideBar.qml
+    QML_FILES pages/WelcomePage.qml
+    QML_FILES
+    QML_FILES pages/PageNavigator.qml
+    QML_FILES pages/MatrixPage.qml
+    QML_FILES pages/CompassPage.qml
+
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

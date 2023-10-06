@@ -1,8 +1,9 @@
 pragma Singleton
 import QtQuick
+import QtQuick.Controls
 
 QtObject {
-    property int WINDOW_WIDTH: 800
-    property int WINDOW_HEIGHT: 640
-    property string TITLE: qsTr("GenericWebApp")
+    readonly property int c_WINDOW_WIDTH: 800
+    readonly property int c_WINDOW_HEIGHT: 640
+    readonly property string c_TITLE: qsTr("GenericWebApp")
 }
