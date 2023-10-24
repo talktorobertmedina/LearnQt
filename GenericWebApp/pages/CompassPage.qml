@@ -4,5 +4,5 @@ import QtQuick
 // aka mouse cursor points to true North
 
 Item {
-
+    anchors.fill: parent
 }
